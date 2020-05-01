@@ -7,13 +7,13 @@ import "strconv"
 // Noises are only emitted from raindrop counts that are factors of 3,5, or 7.
 func Convert(raindropCount int) string {
 	noise := ""
-	if 0 == raindropCount%3 {
+	if raindropCount%3 == 0 {
 		noise += "Pling"
 	}
-	if 0 == raindropCount%5 {
+	if raindropCount%5 == 0 {
 		noise += "Plang"
 	}
-	if 0 == raindropCount%7 {
+	if raindropCount%7 == 0 {
 		noise += "Plong"
 	}
 	if noise == "" {
