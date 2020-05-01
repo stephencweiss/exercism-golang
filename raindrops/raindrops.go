@@ -8,13 +8,13 @@ import "strconv"
 func Convert(raindropCount int) string {
 	noise := ""
 	if 0 == raindropCount%3 {
-		noise = noise + "Pling"
+		noise += "Pling"
 	}
 	if 0 == raindropCount%5 {
-		noise = noise + "Plang"
+		noise += "Plang"
 	}
 	if 0 == raindropCount%7 {
-		noise = noise + "Plong"
+		noise += "Plong"
 	}
 	if noise == "" {
 		noise = strconv.Itoa(raindropCount)
